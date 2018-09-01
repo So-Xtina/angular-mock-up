@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-tasks-board',
-  templateUrl: './tasks-board.component.html',
-  styleUrls: ['./tasks-board.component.css']
+  selector: "app-tasks-board",
+  templateUrl: "./tasks-board.component.html",
+  styleUrls: ["./tasks-board.component.css"]
 })
 export class TasksBoardComponent implements OnInit {
+  sorterImgPath: string;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.sorterImgPath = "../../../../assets/images/sorter.png";
   }
 
+  ngOnInit() {}
 }
