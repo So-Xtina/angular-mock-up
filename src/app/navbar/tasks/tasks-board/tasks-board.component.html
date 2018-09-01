@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid table-container">
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -21,8 +21,36 @@
         <th scope="col"></th>
       </tr>
     </thead>
-    <tbody>
-
+    <tbody *ngFor="let patient of patients">
+      <tr>
+        <td>
+          <div class="status">Overdue</div>
+          <div>
+            <div class="status-type">{{ patient.status.type }}</div>
+            <div class="status-progress">{{ patient.status.progress }}</div>
+          </div>
+        </td>
+        <td>
+          {{ patient.goal }}
+        </td>
+        <td>
+          {{ patient.assigned_to }}
+        </td>
+        <td>
+          {{ patient.patient.last_name }}, {{ patient.patient.first_name }}
+        </td>
+        <td>
+          <div class="date"> {{ patient.date_assigned.date }} </div>
+          <div class="date date-value"> {{ patient.date_assigned.value }} </div>
+        </td>
+        <td>
+          <div class="date"> {{ patient.date_accepted.date }} </div>
+          <div class="date date-value"> {{ patient.date_accepted.value }} </div>
+        </td>
+        <td>
+          <div class="modify">Modify</div>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
