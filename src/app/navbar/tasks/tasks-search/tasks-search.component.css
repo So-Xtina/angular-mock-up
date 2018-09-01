@@ -1,0 +1,39 @@
+/******** Search Bar **********/
+.inputSearch {
+  border-radius: 25px;
+  background-image: url(https://www.freeiconspng.com/uploads/search-icon-png-2.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 91%;
+  width: 250px;
+}
+
+/******* buttons ********/
+
+.btn-rel {
+  position: relative;
+}
+
+.clr-btn {
+  border-radius: 25px;
+  border: 1px solid #e41b80;
+  color: #e41b80;
+  font-weight: bold;
+  width: 100px;
+  margin: 1%;
+  position: absolute;
+  right: 34%;
+  /* right: 41%; */
+}
+
+.apply-btn {
+  border-radius: 25px;
+  background-color: #e41b80;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100px;
+  margin: 1%;
+  position: absolute;
+  right: 5.5%;
+  /* right: 13.5%; */
+}

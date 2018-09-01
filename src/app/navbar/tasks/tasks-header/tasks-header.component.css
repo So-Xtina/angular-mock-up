@@ -1,0 +1,21 @@
+/************* Header ***************/
+.task-header {
+  margin: 1%;
+}
+
+/************ Drop Down Menus *************/
+
+.task-header-options {
+  color: #e41b80;
+}
+
+.options {
+  font-size: 0.95em;
+  margin-top: 4%;
+  padding: 0;
+  vertical-align: top;
+}
+
+.glyph-eye {
+  color: #e41b80;
+}
