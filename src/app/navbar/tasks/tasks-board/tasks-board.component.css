@@ -1,3 +1,37 @@
+/********** Table Container ************/
+.table-container {
+  margin-top: 3%;
+}
+
+/*********** Table Header **************/
 .sorter {
   width: 20px;
+}
+
+/*********** Table Body **************/
+.status {
+  color: #e41b80;
+  font-weight: bold;
+}
+
+.status-type,
+.status-progress {
+  display: inline-block;
+}
+
+.status-progress {
+  float: right;
+}
+
+.date {
+  display: inline-block;
+}
+
+.date-value {
+  float: right;
+}
+
+.modify {
+  color: #e41b80;
+  text-align: center;
 }
