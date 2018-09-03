@@ -1,7 +1,7 @@
 <div class="container-fluid table-container">
   <table class="table table-bordered">
     <thead>
-      <tr>
+      <tr class="table-header">
         <th scope="col">Status / Progress
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
@@ -37,18 +37,20 @@
           {{ patient.assigned_to }}
         </td>
         <td>
-          {{ patient.patient.last_name }}, {{ patient.patient.first_name }}
+          <div class="patient-name">
+            {{ patient.patient.last_name }}, {{ patient.patient.first_name }}
+          </div>
         </td>
         <td>
-          <div class="date"> {{ patient.date_assigned.date }} </div>
-          <div class="date date-value"> {{ patient.date_assigned.value }} </div>
+          <div class=" date "> {{ patient.date_assigned.date }} </div>
+          <div class="date date-value "> {{ patient.date_assigned.value }} </div>
         </td>
         <td>
-          <div class="date"> {{ patient.date_accepted.date }} </div>
-          <div class="date date-value"> {{ patient.date_accepted.value }} </div>
+          <div class="date "> {{ patient.date_accepted.date }} </div>
+          <div class="date date-value "> {{ patient.date_accepted.value }} </div>
         </td>
         <td>
-          <div class="modify">Modify</div>
+          <div class="modify ">Modify</div>
         </td>
       </tr>
     </tbody>
