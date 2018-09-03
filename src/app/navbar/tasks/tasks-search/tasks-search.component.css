@@ -10,8 +10,14 @@
 
 /******* buttons ********/
 
-.btn-rel {
-  position: relative;
+.btn-grp {
+  margin-top: 3%;
+}
+
+.clr-btn,
+.apply-btn {
+  display: inline-block;
+  margin: 0.5%;
 }
 
 .clr-btn {
@@ -20,10 +26,6 @@
   color: #e41b80;
   font-weight: bold;
   width: 100px;
-  margin: 1%;
-  position: absolute;
-  right: 34%;
-  /* right: 41%; */
 }
 
 .apply-btn {
@@ -32,8 +34,4 @@
   color: #ffffff;
   font-weight: bold;
   width: 100px;
-  margin: 1%;
-  position: absolute;
-  right: 2.5%;
-  /* right: 13.5%; */
 }

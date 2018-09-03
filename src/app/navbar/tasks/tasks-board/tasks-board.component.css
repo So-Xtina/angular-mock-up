@@ -1,11 +1,15 @@
 /********** Table Container ************/
 .table-container {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 /*********** Table Header **************/
 .sorter {
   width: 20px;
+}
+
+.table-header {
+  background-color: #adabab26;
 }
 
 /*********** Table Body **************/
@@ -17,10 +21,15 @@
 .status-type,
 .status-progress {
   display: inline-block;
+  font-weight: bold;
 }
 
 .status-progress {
   float: right;
+}
+
+.patient-name {
+  color: #e41b80;
 }
 
 .date {
@@ -29,6 +38,7 @@
 
 .date-value {
   float: right;
+  color: #e41b80;
 }
 
 .modify {
