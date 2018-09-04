@@ -15,8 +15,22 @@
   margin-top: 3%;
   padding: 0;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .glyph-eye {
   color: #e41b80;
+}
+
+/********* Goal Type Drop Down Menu *************/
+
+.choose {
+  width: 65%;
+  border: 1px solid darkgrey;
+  border-radius: 2px;
+  background-color: lightgray;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
 }

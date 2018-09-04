@@ -1,24 +1,24 @@
 <div class="container-fluid table-container">
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="tableOrder">
     <thead>
       <tr class="table-header">
-        <th scope="col">Status / Progress
+        <th scope="col" class="th-sm">Status / Progress
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
-        <th scope="col">Goal <span class="glyphicon glyphicon-triangle-top pull-right"></span></th>
-        <th scope="col">Assigned To
+        <th scope="col" class="th-sm">Goal <span class="glyphicon glyphicon-triangle-top pull-right"></span></th>
+        <th scope="col" class="th-sm">Assigned To
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
-        <th scope="col">Patient
+        <th scope="col" class="th-sm">Patient
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
-        <th scope="col">Assigned
+        <th scope="col" class="th-sm">Assigned
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
-        <th scope="col">Accepted
+        <th scope="col" class="th-sm">Accepted
           <img [src]="sorterImgPath" alt="sorter" class="sorter pull-right">
         </th>
-        <th scope="col"></th>
+        <th scope="col" class="th-sm"></th>
       </tr>
     </thead>
     <tbody *ngFor="let patient of patients">

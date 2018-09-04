@@ -19,6 +19,8 @@ export class TasksSearchComponent implements OnInit {
 
   filterPatients(term: string) {
     this.patients = this._patientsService.filterPatients(this.term);
+
+    this.clearInput();
   }
 
   clearInput() {
