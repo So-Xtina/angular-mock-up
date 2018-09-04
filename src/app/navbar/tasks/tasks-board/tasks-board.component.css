@@ -1,0 +1,47 @@
+/********** Table Container ************/
+.table-container {
+  margin-top: 1%;
+}
+
+/*********** Table Header **************/
+.sorter {
+  width: 20px;
+}
+
+.table-header {
+  background-color: #adabab26;
+}
+
+/*********** Table Body **************/
+.status {
+  color: #e41b80;
+  font-weight: bold;
+}
+
+.status-type,
+.status-progress {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.status-progress {
+  float: right;
+}
+
+.patient-name {
+  color: #e41b80;
+}
+
+.date {
+  display: inline-block;
+}
+
+.date-value {
+  float: right;
+  color: #e41b80;
+}
+
+.modify {
+  color: #e41b80;
+  text-align: center;
+}
