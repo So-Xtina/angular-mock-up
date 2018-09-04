@@ -15,11 +15,26 @@
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3">
         <h5 class="col-md-6 col-sm-6 col-xs-6">Status:</h5>
-        <p class="col-md-6 col-sm-6 col-xs-6 options"><span class="task-header-options">Choose</span><span class="glyphicon glyphicon-menu-down"></span></p>
+        <div class="col-md-6 col-sm-6 col-xs-6 options" (click)="sDropDownMenu()">
+          <span class="task-header-options">Choose</span>
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <div *ngIf="statusShow">
+            <div class="choose" (click)="choose($event)">Accepted</div>
+            <div class="choose" (click)="choose($event)">Pending</div>
+          </div>
+        </div>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3">
         <h5 class="col-md-6 col-sm-6 col-xs-6">Goal Type:</h5>
-        <p class="col-md-6 col-sm-6 col-xs-6 options"><span class="task-header-options">Choose</span><span class="glyphicon glyphicon-menu-down"></span></p>
+        <div class="col-md-6 col-sm-6 col-xs-6 options" (click)="gtDropDownMenu()">
+          <span class="task-header-options">Choose</span>
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <div *ngIf="goalTypeShow">
+            <div class="choose" (click)="choose($event)">Accept</div>
+            <div class="choose" (click)="choose($event)">Authorize</div>
+            <div class="choose" (click)="choose($event)">Benefits</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

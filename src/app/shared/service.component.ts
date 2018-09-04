@@ -12,7 +12,7 @@ export class PatientsService {
       1,
       { type: "Accepted", progress: "0%" },
       "Accept",
-      "Christina So",
+      "Ricky Nesheiwat",
       { last_name: "Last", first_name: "First" },
       { date: "06/22/2018", value: "66" },
       { date: "06/22/2018", value: "66" }
@@ -158,6 +158,7 @@ export class PatientsService {
     return this.patients.slice();
   }
 
+  //search bar
   filterPatients(term: string): any {
     let searchResults = [];
     let patient = this.patients;
@@ -195,5 +196,35 @@ export class PatientsService {
     }
 
     this.filteredPatients.emit(searchResults);
+  }
+
+  //filters : status / goal type
+  choices(choice) {
+    let results = [];
+    console.log(choice);
+
+    this.patients.forEach(function(patient) {
+      for (var key in patient) {
+        var patientValue = patient[key];
+        if (patientValue !== null) {
+          if (typeof patientValue === "string" && choice !== "Accepted") {
+            if (patientValue.includes(choice)) {
+              results.push(patient);
+            }
+          } else if (typeof patientValue === "object" && choice !== "Accept") {
+            for (var innerKey in patientValue) {
+              var innerValue = patientValue[innerKey];
+              if (innerValue !== null) {
+                if (innerValue.includes(choice)) {
+                  results.push(patient);
+                }
+              }
+            }
+          }
+        }
+      }
+    });
+
+    this.filteredPatients.emit(results);
   }
 }
